@@ -1,8 +1,6 @@
 import logging
 from typing import List, Tuple
 
-from utils import parse_txt_file
-
 logging.basicConfig(level=logging.INFO)
 
 

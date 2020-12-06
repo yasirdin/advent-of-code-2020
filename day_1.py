@@ -5,6 +5,12 @@ from utils import parse_txt_file
 
 logging.basicConfig(level=logging.INFO)
 
+
+def parse_txt_file(filepath: str) -> List[int]:
+    with open(filepath) as f:
+        return [int(line) for line in f.readlines()]
+
+
 input = parse_txt_file('./day-1.txt')
 
 # Find the two entries which add to 2020.
